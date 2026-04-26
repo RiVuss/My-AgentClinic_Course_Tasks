@@ -5,6 +5,8 @@
 - Server-side JSX layout component (header, nav, main, footer)
 - PicoCSS as the base styling framework across Phase 2 routes
 - Project CSS overrides for responsive spacing, layout tuning, and visual consistency on top of PicoCSS
+- High-contrast text defaults and component-level text color overrides that keep all rendered copy readable
+- A simple local SVG brand mark displayed next to the `AgentClinic` header logo text
 - All routes render inside the shared layout
 - SQLite database + first migration (`agents` table)
 - Seed a handful of fictional agents
@@ -39,6 +41,14 @@ All new UI in this phase must remain usable on phone, tablet, and desktop viewpo
 
 Phase 2 uses `@picocss/pico` as the shared CSS baseline for typography, forms, tables, and semantic elements, with a small project override stylesheet for AgentClinic-specific layout and spacing adjustments.
 
+### Enforce readable text contrast across the UI
+
+The Phase 2 stylesheet must explicitly set accessible foreground colors for body text, muted text, metadata, and navigation labels so content remains legible in all standard page sections.
+
+### Use a local SVG logo mark in the shared header
+
+The header logo includes a lightweight local SVG mark served from static assets and rendered next to the `AgentClinic` brand text on all pages using the shared layout.
+
 ### Use SQLite with SQL migrations
 
 Persist domain entities using SQLite and plain SQL migrations, aligned with the current tech stack and early-phase simplicity goals.
@@ -59,6 +69,7 @@ Route behavior and key content/rendering expectations are verified with Vitest-b
 - `GET /ailments`
 - Planned styling interface:
 - shared layout includes PicoCSS and one project override stylesheet for all Phase 2 pages
+- shared layout logo includes an SVG mark served from `/static/agentclinic-mark.svg`
 - Planned database interfaces:
 - `agents` table
 - `ailments` table

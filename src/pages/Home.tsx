@@ -6,7 +6,15 @@ export function Home() {
       <section class="home">
         <div class="home__intro">
           <h1>AgentClinic</h1>
-          <p class="home__lede">A dependable clinic where agents report issues and recover quickly.</p>
+          <p class="home__lede">
+            A dependable clinic where agents report issues, receive targeted therapies, and recover
+            quickly.
+          </p>
+          <p>
+            <a href="/agents" role="button">
+              Review Active Agents
+            </a>
+          </p>
         </div>
         <ul class="home__highlights" aria-label="Clinic highlights">
           <li class="home__card">

@@ -1,7 +1,13 @@
+import type { Child } from 'hono/jsx'
+
 type MainProps = {
-  children?: unknown
+  children?: Child
 }
 
 export function Main({ children }: MainProps) {
-  return <main class="site-main container">{children}</main>
+  return (
+    <main class="site-main">
+      <div class="container">{children}</div>
+    </main>
+  )
 }

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">AgentClinic Mark</title>
+  <desc id="desc">A circular badge with a medical-style cross and spark accent.</desc>
+  <defs>
+    <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b3d56" />
+      <stop offset="100%" stop-color="#17658f" />
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="32" r="29" fill="#ffffff" stroke="url(#ringGradient)" stroke-width="6" />
+  <rect x="27" y="18" width="10" height="28" rx="3" fill="#0b3d56" />
+  <rect x="18" y="27" width="28" height="10" rx="3" fill="#0b3d56" />
+  <path d="M47 13 L50 19 L56 22 L50 25 L47 31 L44 25 L38 22 L44 19 Z" fill="#f59e0b" />
+</svg>

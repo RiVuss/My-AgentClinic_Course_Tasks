@@ -79,6 +79,20 @@ The rendered HTML and stylesheet must demonstrate:
 
 Automated tests should assert presence of expected responsive CSS indicators where practical.
 
+### 9. Text contrast/readability baseline is explicit
+
+Project override CSS must include explicit high-contrast text color declarations for primary and secondary text contexts (body copy, metadata, navigation labels, and helper text), and tests should assert the presence of these color rules.
+
+### 10. Header logo SVG is present and served
+
+Rendered page HTML must include a reference to `/static/agentclinic-mark.svg` in the shared header, and:
+
+```bash
+curl -sI http://localhost:3000/static/agentclinic-mark.svg
+```
+
+Must return `200 OK` with SVG content type.
+
 ## Not Required
 
 - CI pipeline execution is not required in this phase validation checklist

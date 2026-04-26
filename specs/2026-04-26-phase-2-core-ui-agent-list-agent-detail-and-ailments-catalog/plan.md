@@ -56,3 +56,11 @@
 31. Verify `npm run typecheck` exits 0
 32. Verify `npm run test` exits 0
 33. Run `npm run dev` and perform manual `curl` checks for route availability and expected HTML content
+
+## Group 9 - Visual Accessibility and Branding
+
+34. Audit Phase 2 text colors and update CSS tokens/rules so body, metadata, helper text, and navigation labels maintain readable contrast on light backgrounds
+35. Ensure muted/secondary text still meets readability expectations while preserving visual hierarchy
+36. Create a simple local SVG brand mark (`/static/agentclinic-mark.svg`) and display it next to the `AgentClinic` logo text in the shared header
+37. Ensure logo mark placement scales cleanly at mobile and desktop breakpoints without clipping or layout shift
+38. Add automated assertions that the logo SVG is referenced in rendered HTML and that the SVG asset is served successfully
