@@ -2,5 +2,8 @@
 
 ## 2026-04-26
 - Replan Vitest update (commit: a6752bd)
-- readme (commit: 2729e3c)
-- Inital commit (commit: 27a6b14)
+- Update README (commit: 2729e3c)
+- Initial commit (commit: 27a6b14)
+- Phase 2 implemented (commit: 0f69201)
+- Phase 2 plan (commit: 3c83c59)
+- Project replanning lesson (commit: 87702b5)
