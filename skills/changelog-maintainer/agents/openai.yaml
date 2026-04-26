@@ -1,0 +1,4 @@
+interface:
+  display_name: "Changelog Maintainer"
+  short_description: "Maintain changelog.md from git history by date"
+  default_prompt: "Update changelog.md before merge and include any missing commit entries."

@@ -47,15 +47,19 @@ curl -sI http://localhost:3000/static/style.css
 
 HTTP status must be `200 OK` and content type must be CSS.
 
-### 6. Hono version is pinned
+### 6. Responsive baseline exists
+
+The HTML must include a viewport meta tag and the stylesheet must contain mobile-first responsive rules with at least one tablet breakpoint and one desktop breakpoint.
+
+### 7. Hono version is pinned
 
 `package.json` must list `hono` without a `^` or `~` range prefix.
 
-### 7. Strict TypeScript is on
+### 8. Strict TypeScript is on
 
 `tsconfig.json` must contain `"strict": true`.
 
 ## Not Required
 
 - No CI pipeline required
-- No browser automation required (command-line checks are sufficient)
+- No browser automation required (command-line checks and automated tests are sufficient)

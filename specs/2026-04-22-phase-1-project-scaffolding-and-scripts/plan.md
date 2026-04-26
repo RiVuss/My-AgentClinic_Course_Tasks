@@ -25,20 +25,22 @@
 12. Page renders an `<h1>` with `AgentClinic` and a short tagline
 13. `GET /` returns the rendered JSX
 
-## Group 5 - Layout Component
+## Group 5 - Responsive Layout and Styling
 
-14. Create `src/components/Layout.tsx` with a top-level shell (`<html>`, `<head>`, `<body>`)
-15. Create `src/components/Header.tsx`, `src/components/Main.tsx`, and `src/components/Footer.tsx`
-16. Link `/static/style.css` in `<head>`
-17. Create `static/style.css` with baseline styles
+14. Add mobile-first CSS tokens for spacing, typography, and colors
+15. Use fluid sizing (`clamp`, relative widths) for key text and layout spacing
+16. Add explicit breakpoint rules for tablet and desktop (`@media` queries)
+17. Ensure home content stacks naturally on narrow viewports and expands cleanly on wider screens
+18. Keep static stylesheet serving in place via `/static/style.css`
 
 ## Group 6 - Automated Validation
 
-18. Add Vitest tests for `GET /` (status + expected HTML content)
-19. Add Vitest tests for `/static/style.css` (status + expected CSS content)
+19. Add Vitest tests for `GET /` (status + expected HTML content)
+20. Add Vitest tests for `/static/style.css` (status + expected CSS content)
+21. Add assertions that verify responsive CSS rules are present
 
 ## Group 7 - Verify
 
-20. Run `npm run typecheck` - must exit 0 with no errors
-21. Run `npm run test` - must execute and pass
-22. Run `npm run dev` and confirm `curl localhost:3000` returns HTML containing the heading
+22. Run `npm run typecheck` - must exit 0 with no errors
+23. Run `npm run test` - must execute and pass
+24. Run `npm run dev` and confirm `curl localhost:3000` returns HTML containing the heading
