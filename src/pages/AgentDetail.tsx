@@ -45,6 +45,12 @@ export function AgentDetailPage({ agent }: AgentDetailPageProps) {
             <p>No linked ailments yet.</p>
           )}
         </section>
+
+        <p class="agent-profile__actions">
+          <a href={`/agents/${agent.id}/appointments/new`} role="button">
+            Book Appointment
+          </a>
+        </p>
       </article>
     </Layout>
   )

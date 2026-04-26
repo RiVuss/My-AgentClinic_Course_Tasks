@@ -3,6 +3,8 @@ export function Header() {
     { href: '/', label: 'Home' },
     { href: '/agents', label: 'Agents' },
     { href: '/ailments', label: 'Ailments' },
+    { href: '/therapies', label: 'Therapies' },
+    { href: '/dashboard', label: 'Dashboard' },
   ]
 
   return (
