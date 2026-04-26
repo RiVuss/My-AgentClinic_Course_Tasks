@@ -1,6 +1,8 @@
 # Changelog
 
 ## 2026-04-26
+- Complete roadmap phases 3-7 (therapies, appointments, dashboard, polish, hardening) (commit: 7656429)
+- Update changelog entries (commit: 2d9a9e0)
 - Replan Vitest update (commit: a6752bd)
 - Update README (commit: 2729e3c)
 - Initial commit (commit: 27a6b14)
